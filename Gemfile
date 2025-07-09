@@ -26,9 +26,12 @@ end
 
 group :development do
   gem "web-console",         "4.2.0"
-  gem "solargraph",          "0.53.4"
+  
   gem "irb",                 "1.10.0"
-  gem "repl_type_completor", "0.1.2"
+  gem "repl_type_completor"
+  gem "rubocop",             require: false
+  gem "rubocop-rails", "~> 2.30.3", require: false
+  gem "ruby-lsp",            require: false
 end
 
 group :test do

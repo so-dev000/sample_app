@@ -1,0 +1,9 @@
+---
+formatting:
+  enabled: false
+diagnostics:
+  enabled: false
+linters:
+  rubocop: false
+indexing:
+  enabled: true
