@@ -1,2 +1,14 @@
-inherit_from:
-  - node_modules/@prettier/plugin-ruby/rubocop.yml
+plugins:
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - 'db/schema.rb'
+
+Rails:
+  Enabled: true
