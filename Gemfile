@@ -17,6 +17,7 @@ gem "concurrent-ruby", "1.3.4"
 gem "bootstrap", "~> 5.3"
 gem "mutex_m"
 gem "bigdecimal"
+gem "drb"
 
 group :development, :test do
   gem 'reline', '0.5.10'
