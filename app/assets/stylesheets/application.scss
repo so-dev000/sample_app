@@ -296,8 +296,8 @@ input {
 }
 
 .field_with_errors {
-  @extend .has-error;
   .form-control {
-    color: $state-danger-text;
+    color: #b02a37;
+    border-color: #dc3545;
   }
 }
