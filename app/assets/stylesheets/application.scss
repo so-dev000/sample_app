@@ -8,6 +8,40 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.jumbotron {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  h1 {
+    margin-bottom: 1.5rem;
+    color: #212529;
+    font-weight: 600;
+  }
+  h2 {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn {
+    margin-top: 1rem;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,123,255,0.3);
+    transition: all 0.3s ease;
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,123,255,0.4);
+    }
+  }
 }
 
 section {
@@ -96,7 +130,38 @@ footer {
   }
 }
 
+/* Container and spacing improvements */
+.container {
+  padding: 0 15px;
+}
+
+main {
+  min-height: calc(100vh - 200px);
+  padding: 2rem 0;
+}
+
+/* Rails logo styling */
+.text-center img {
+  margin-top: 2rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/* Responsive improvements */
 @media (max-width: 767px) {
+  .jumbotron {
+    padding: 2rem 1rem;
+    h1 {
+      font-size: 2.2em;
+    }
+    h2 {
+      font-size: 1.1em;
+    }
+  }
+  
   footer {
     small {
       display: block;
