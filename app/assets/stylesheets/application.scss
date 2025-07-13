@@ -6,10 +6,16 @@ $gray-medium-light: #eaeaea;
 
 /* universal */
 
+html, body {
+  height: 100%;
+}
+
 body {
   padding-top: 60px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
 }
 
 .jumbotron {
@@ -105,8 +111,10 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  flex-shrink: 0;
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 20px 0;
   border-top: 1px solid $gray-medium-light;
   color: #6c757d;
   a {
@@ -136,7 +144,7 @@ footer {
 }
 
 main {
-  min-height: calc(100vh - 200px);
+  flex: 1 0 auto;
   padding: 2rem 0;
 }
 
