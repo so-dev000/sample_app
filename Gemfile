@@ -4,8 +4,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.4.4'
 
 gem 'bcrypt'
+gem 'benchmark'
 gem 'bigdecimal'
 gem 'bootsnap', '1.16.0', require: false
+gem 'ostruct'
 gem 'bootstrap', '~> 5.3'
 gem 'concurrent-ruby', '1.3.4'
 gem 'drb'
