@@ -26,5 +26,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_not flash.key?('danger')
     assert_not flash.key?('info')
     assert_not flash.key?('warning')
+    assert is_logged_in?
   end
 end

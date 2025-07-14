@@ -2,5 +2,5 @@
 
 # Application controller
 class ApplicationController < ActionController::Base
-  
+  include SessionsHelper
 end
