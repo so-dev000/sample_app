@@ -9,6 +9,7 @@ gem 'bigdecimal'
 gem 'bootsnap', '1.16.0', require: false
 gem 'bootstrap', '~> 5.3'
 gem 'concurrent-ruby', '1.3.4'
+gem 'dotenv'
 gem 'drb'
 gem 'faker'
 gem 'importmap-rails', '1.1.5'
