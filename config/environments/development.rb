@@ -75,8 +75,7 @@ Rails.application.configure do
   # Email config
   config.action_mailer.raise_delivery_errors = false
 
-  host = ENV.fetch('host', nil)
-  protocol = ENV.fetch('http', nil)
+  host = ENV.fetch('HOST', nil)
 
-  config.action_mailer.default_url_options = { host: host, protocol: protocol }
+  config.action_mailer.default_url_options = { host: host }
 end
