@@ -327,3 +327,17 @@ input {
     border-color: #dc3545;
   }
 }
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid $gray-medium-light;
+  }
+}
