@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.4.4'
 
+gem 'active_storage_validations'
 gem 'bcrypt'
 gem 'benchmark'
 gem 'bigdecimal'
@@ -12,6 +13,7 @@ gem 'concurrent-ruby', '1.3.4'
 gem 'dotenv'
 gem 'drb'
 gem 'faker'
+gem 'image_processing'
 gem 'importmap-rails', '1.1.5'
 gem 'jbuilder', '2.11.5'
 gem 'mutex_m'
