@@ -8,3 +8,4 @@ import "custom/image_upload"
 
 // Make bootstrap available globally
 window.bootstrap = bootstrap
+
